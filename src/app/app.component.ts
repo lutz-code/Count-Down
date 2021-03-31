@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'count-down';
+  now: string = moment().format('D MMM YYYY');
 }
