@@ -13,5 +13,5 @@ import { MomentInput } from 'node_modules/moment';
 export class AppComponent {
   title = 'count-down';
   public now = moment().format('h:mm:ss A');
- }
+}
   
