@@ -1,4 +1,9 @@
+import { TmplAstBoundAttribute } from '@angular/compiler';
 import { Component } from '@angular/core';
+import * as moment from 'node_modules/moment';
+import { MomentInput } from 'node_modules/moment';
+
+
 
 @Component({
   selector: 'app-root',
@@ -7,5 +12,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'count-down';
-  now: string = moment().format('D MMM YYYY');
-}
+  public now = moment().format('h:mm:ss A');
+ }
+  

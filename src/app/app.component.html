@@ -8,13 +8,15 @@
 
   <style>
     #clock {
-        width: 300px;
-        height: 100px;
+        width: 200px;
+        height: 60px;
         background-color: black;
         border-radius: 5px;
         color:white;
-        font-size: 50;
+        font-size: 40;
         display: flex;
+        margin-left: 200px;
+        margin-top: 200px;
         align-items: center;
         justify-content: center;
         font-family: "Contrail-One";
@@ -23,23 +25,18 @@
   </style>
    <body>
     <h1> Digital Clock with Moment.js</h1>
-    <div id='clock'>8:23 pm</div>
+    
     <script src="/node_modules/moment/moment.js">
-    console.log(moment());
+
     
 
     </script>
 
   <script> 
-     const clock = document.getElementById('clock');
-
-    setInterval(() => {
-      const now = moment();
-      const humanReadable = now.format('hh:mm:ss A');
   
-      clock.textContent = humanReadable;
-  }, 1000);
+     
   </script> 
+  <p id="clock">It is {{ now }}</p>
 </body>
 </html>
 
